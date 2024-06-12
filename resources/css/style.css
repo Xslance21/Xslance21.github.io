@@ -179,6 +179,10 @@ img#qrEcard{
     p#vision{
         width: 90%;
     }
+
+    img#qrEcard{
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -187,7 +191,7 @@ img#qrEcard{
     }
 
     img#qrEcard{
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -246,7 +250,7 @@ img#qrEcard{
     }
 
     img#qrEcard{
-        width: 65%;
+        width: 50%;
     }
     img.imgIcon{
         width: 18%;
