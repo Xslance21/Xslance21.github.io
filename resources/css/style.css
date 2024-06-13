@@ -257,3 +257,11 @@ img#qrEcard{
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape){
+    footer#information{
+        height: 1000px;
+        row-gap: 8.5%;
+        grid-template-rows: 5% 12.5% 5% 12.5% 8.5% 30% ;
+        grid-template-columns: 100%;
+    }
+}
