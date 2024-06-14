@@ -1,3 +1,3 @@
 # Xslance21.github.io
 
-Probando 6
+- Fixing the lorem ipsum
