@@ -40,8 +40,9 @@ section#buttons{
     display: grid;
     width: 80%;
     grid-template: 100px 100px / 40% 40%;
-    row-gap: 50px;
+    row-gap: 40%;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 a.buttonIcon{
@@ -97,16 +98,18 @@ h3#visionTitle{
 
 p#mission{
     grid-area: Mission;
-    width: 60%;
+    width: 85%;
     justify-self: center;
     text-align: justify;
+    align-self: self-start;
 }
 
 p#vision{
     grid-area: Vision;
-    width: 60%;
+    width: 85%;
     justify-self: center;
     text-align: justify;
+    align-self: self-start;
 }
 
 a#portafolio{
@@ -140,43 +143,80 @@ img#qrEcard{
     justify-self: center;
 }
 
-@media only screen and (min-width: 940px) and (max-width: 1024px)  {
-    p#mission{
-        width: 80%;
-    }
-
-    p#vision{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width:955px){
-    header h1#headingName{
-        font-size: 2.45rem;
-    }
-
-    footer#information{
-        grid-template-areas: "MissionT"
-                             "Mission"
-                             "VisionT"
-                             "Vision"
-                             "Port"
-                             "qr";
-        row-gap: 8%;
-        grid-template-rows: 5% 12.5% 5% 12.5% 8.5% 30% ;
-        grid-template-columns: 100%;
-                             
+@media only screen and (min-width: 1600px) and (orientation: landscape){
+    section#buttons{
+        row-gap: 50%;
     }
 
     img.imgIcon{
-        width: 20%;
+        margin-bottom: 10%;
+    }
+
+    h3.iconTitle{
+        font-size: 200%;
+    }
+
+    header img#logo{
+        width: 40%;
+    }
+
+    header h1#headingName{
+        font-size: 400%;
+    }
+
+    h3#missionTitle{
+        font-size: 2.5rem;
+    }
+    
+    h3#visionTitle{
+        font-size: 2.5rem;
     }
 
     p#mission{
-        width: 90%;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    p#vision{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    footer#information{
+        row-gap: 5;
+        grid-template-rows: 5% 42% 8% 70%;
+    }
+
+    a#portafolio{
+        font-size: 1.25rem;
+        width: 200px;
+        height:75px;
+    }
+
+    img#qrEcard{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape){
+    footer#information{
+        grid-template-rows: 5% 40% 8% 60%
+    }
+
+    h3#missionTitle{
+        font-size: 1.3rem;
+    }
+
+    h3#visionTitle{
+        font-size: 1.3rem;
     }
 
     p#vision{
+        width: 90%;
+    }
+
+    p#mission{
         width: 90%;
     }
 
@@ -185,93 +225,142 @@ img#qrEcard{
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-height: 600px){
+    footer#information{
+        row-gap: 5%;
+        grid-template-rows: 5% 40% 20% 50%
+    }
+
+    a#portafolio{
+        margin-top: 5%;
+    }
+
+    img#qrEcard{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 764px) and (max-height: 720px){
+
+    section#buttons{
+        grid-template: repeat(4,100px) / 80%;
+        row-gap: 8%;
+        margin-bottom: 15%;
+    }
+
+    header img#logo{
+        width: 50%;
+    }
+
     header h1#headingName{
         font-size: 2rem;
     }
 
+    img.imgIcon{
+        width: 12.5%;
+        margin-bottom: 2.5%;
+    }
+
+    h3.iconTitle{
+        font-size: 100%;
+    }
+
+    footer#information{
+        height: 1000px;
+        grid-template-areas: 
+            "MissionT"
+            "Mission"
+            "VisionT"
+            "Vision"
+            "Port"
+            "qr";
+        grid-template-rows: 5% 20% 5% 20% 10% 40%;
+        grid-template-columns: 90%;
+    }
+
     img#qrEcard{
-        width: 30%;
+        width: 40%;
     }
 }
 
-@media only screen and (max-width:653px){
+@media only screen and (max-width: 480px) and (orientation:portrait){
+    
+    section#buttons{
+        grid-template: repeat(4,100px) / 80%;
+        row-gap: 8%;
+        margin-bottom: 15%;
+    }
+
     header img#logo{
-        width: 40%;
-        height: auto;
+        width: 50%;
     }
 
     header h1#headingName{
-        font-size: 1.533rem;
-    }
-
-    section#buttons{
-        grid-template: repeat(4,100px) / 80%;
+        font-size: 1.25rem;
     }
 
     img.imgIcon{
         width: 12.5%;
+        margin-bottom: 2.5%;
+    }
+
+    h3.iconTitle{
+        font-size: 100%;
+    }
+
+    footer#information{
+        height: 1300px;
+        grid-template-areas: 
+            "MissionT"
+            "Mission"
+            "VisionT"
+            "Vision"
+            "Port"
+            "qr";
+        row-gap: 2.5%;
+        grid-template-rows: 2.5% 25% 2.5% 30% 5% 35%;
+        grid-template-columns: 90%;
+    }
+
+    img#qrEcard{
+        width: 80%;
+       
     }
 }
 
-@media only screen and (max-width: 480px){
-
-    footer#information{
-        height: 870px;
-        grid-template-areas: "MissionT"
-                             "Mission"
-                             "Mission"
-                             "VisionT"
-                             "Vision"
-                             "Vision"
-                             "Port"
-                             "qr";
-        row-gap: 5%;
-        grid-template-rows: 30px 100px 100px 30px 100px 100px 30px 200px ;
-        grid-template-columns: 100%;
-                             
+@media only screen and (max-height: 480px) and (orientation:landscape){
+    
+    section#buttons{
+        grid-template: repeat(4,100px) / 80%;
+        row-gap: 8%;
+        margin-bottom: 15%;
     }
 
     header img#logo{
         width: 50%;
-        height: auto;
     }
 
     header h1#headingName{
-        font-size: 1.19rem;
+        font-size: 1.25rem;
     }
 
-    p#mission{
-        width: 85%;
+    img.imgIcon{
+        width: 12.5%;
+        margin-bottom: 2.5%;
     }
 
-    p#vision{
-        width: 85%;
+    h3.iconTitle{
+        font-size: 100%;
+    }
+
+    footer#information{
+        height: 600px;
+        
     }
 
     img#qrEcard{
-        width: 50%;
-    }
-    img.imgIcon{
-        width: 18%;
-    }
-}
-
-@media only screen and (min-width: 210px) and (max-width: 900px) and (orientation: landscape){
-    footer#information{
-        height: 1000px;
-        row-gap: 8.5%;
-        grid-template-rows: 5% 12.5% 5% 12.5% 8.5% 30% ;
-        grid-template-columns: 100%;
-    }
-}
-
-@media only screen and (min-height: 210px) and (max-height: 480px) and (orientation: landscape){
-    footer#information{
-        height: 1000px;
-        row-gap: 8.5%;
-        grid-template-rows: 5% 12.5% 5% 12.5% 8.5% 30% ;
-        grid-template-columns: 100%;
+        width: 30%;
+       
     }
 }
 
