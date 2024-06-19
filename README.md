@@ -2,3 +2,4 @@
 
 - Fixing the lorem ipsum
 - Adding cellphonenumber link
+- adding final contacts 
