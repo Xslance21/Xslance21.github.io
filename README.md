@@ -4,3 +4,4 @@
 - Adding cellphonenumber link
 - adding final contacts 
 - Changing qr codes
+- adding the portafolio
