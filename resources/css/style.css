@@ -143,6 +143,7 @@ img#qrEcard{
     justify-self: center;
 }
 
+
 @media only screen and (min-width: 1600px) and (orientation: landscape){
     section#buttons{
         row-gap: 50%;
