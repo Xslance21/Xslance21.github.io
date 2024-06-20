@@ -5,3 +5,4 @@
 - adding final contacts 
 - Changing qr codes
 - adding the portafolio
+- Changin portafolio
