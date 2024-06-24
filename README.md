@@ -10,3 +10,4 @@
 - Change portafolio again
 - Fixing the yellow color in portafolio
 - Adding portafolio link to Ecards
+- Adding taret blank
