@@ -9,3 +9,4 @@
 - New color in portafolio
 - Change portafolio again
 - Fixing the yellow color in portafolio
+- Adding portafolio link to Ecards
