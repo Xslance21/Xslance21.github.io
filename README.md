@@ -8,3 +8,4 @@
 - Changin portafolio
 - New color in portafolio
 - Change portafolio again
+- Fixing the yellow color in portafolio
