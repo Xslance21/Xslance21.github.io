@@ -11,3 +11,4 @@
 - Fixing the yellow color in portafolio
 - Adding portafolio link to Ecards
 - Adding taret blank
+- Fixing again the yello color for cellphones
